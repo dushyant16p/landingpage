@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: rgb(10, 209, 235);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 400px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 30px;
+            
+        }
+
+        .avatar {
+            width: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+
+        h1 {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .remember {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .remember input {
+            position: relative;
+            top: -2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form">  <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+            </div>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById('login-form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+            window.location.href = 'https://www.xhamster.desi'; // Redirect to Google
+        });
+    </script>
+</body>
+</html>
